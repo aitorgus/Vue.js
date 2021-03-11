@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo con Vue</title>
+</head>
+<body>
+    <div id="app">
+        <!--Todo el contenido de Vue.js debe estar en un contenedor con un identificador-->
+        <h1>{{titulo}}</h1>
+
+        <input type="text"  v-model="nuevaFruta" > <!--Con v-model conectamos el html con el JS-->
+        <button @click="agregarFruta">Agregar</button>
+
+        <ul>
+           <li v-for="fruta of frutas">
+               {{fruta.cantidad}} - {{fruta.nombre}}
+               <span v-if="fruta.cantidad === 0">- Sin Stock</span>
+           </li>
+           <!--Hago un ciclo for, donde fruta es la variable que va iterando y tomando los valores de cada
+        posición del array "frutas"-->
+        </ul>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="02.js"></script>
+
+</body>
+</html>
