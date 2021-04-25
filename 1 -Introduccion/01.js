@@ -3,13 +3,13 @@
 const app = new Vue({
     //Aquí dentro trabajaremos con Vue
     el: '#app', //le estamos diciendo dentro del contenedor app será gestionado con vue
-    data:  {
-        titulo : 'Hola mundo con Vue',
-        frutas : [
+    data: {
+        titulo: 'Hola mundo con Vue',
+        frutas: [
 
-            {nombre: 'Pera', cantidad:10},
-            {nombre: 'Manzana', cantidad:0},
-            {nombre: 'Platano', cantidad:11}
+            { nombre: 'Pera', cantidad: 12 }, //Objetos encerrados en corchetes
+            { nombre: 'Manzana', cantidad: 24 },
+            { nombre: 'Platano', cantidad: 0 }
 
         ]
     }

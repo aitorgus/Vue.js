@@ -12,7 +12,7 @@ const app = new Vue({
             { nombre: 'Platano', cantidad: 11 }
 
         ],
-        nuevaFruta: '' //Está vacio por defecto, en él insertaremos las distintas frutas que luego se añadirán al array
+        nuevaFruta: '' //Está vacio por defecto, en él insertaremos las distintas frutas que luego se añadirán al array 
     },
     //Usamos la palabra reservada "methods" aquí irán declarado todos los métodos
     methods: {
